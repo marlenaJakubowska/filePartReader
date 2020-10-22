@@ -31,4 +31,5 @@ class FilePartReaderTest {
     void should_delete_punctuation() throws IOException {
         assertEquals("testing file bob\n", filePartReader.readLines());
     }
+
 }

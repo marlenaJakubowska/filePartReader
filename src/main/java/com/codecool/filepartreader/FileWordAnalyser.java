@@ -35,7 +35,7 @@ public class FileWordAnalyser {
         return words.stream().filter(this::isPalindrome).collect(Collectors.toList());
     }
 
-    private Boolean isPalindrome(String string) {
+    public Boolean isPalindrome(String string) {
         if (string.length() == 1) {
             return false;
         }

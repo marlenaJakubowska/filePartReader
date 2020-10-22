@@ -45,4 +45,10 @@ class FileWordAnalyserTest {
         List<String> correct = new ArrayList<>(Collections.singletonList("bob"));
         assertEquals(correct, fileWordAnalyser.getStringsWhichPalindromes());
     }
+
+    @Test
+    void should_return_false_if_word_with_one_letter() {
+        String oneLetterWord = "f";
+        assertFalse(fileWordAnalyser.isPalindrome(oneLetterWord));
+    }
 }
